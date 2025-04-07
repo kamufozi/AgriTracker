@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet</title>
+
+    <link rel="icon" type="image/svg" href="./assets/favicon.svg">
+    <link rel="stylesheet" href="./css/output.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- google font -->
+
+    <!-- font awesome -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> -->
+    <!-- font awesome -->
+
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>AgriTracker</title>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="bg-[#f4f4f4] ">
+      <div class="container w-[50%] m-[50px]  bg-[#dcc6c6] p-[20px]">
+        <h1 class="text-center">AgriTracker</h1>
+        <form id="crop-form" class="flex flex-col ">
+          <label for="crop-name" class="mt-10">Crop Name:</label>
+          <input type="text" id="crop-name" required class="p-[10px] mt-[5px] bg-[#fefcfc] ">
+          
+          <label for="planting-date" class="mt-10">Planting Date:</label>
+          <input type="date" id="planting-date" required class="p-[10px] mt-[5px]">
+          
+          <label for="harvest-days" class="mt-10">Days to Harvest:</label>
+          <input type="number" id="harvest-days" required class="p-[10px] mt-[5px]">
+          
+          <button type="submit" class="p-[10px] mt-[5px] bg-[#28a745] cursor-pointer">Add Crop</button>
+        </form>
+        <div id="crop-list">
+          <!-- Crop entries will appear here -->
+        </div>
+      </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
